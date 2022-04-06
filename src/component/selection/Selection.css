@@ -11,7 +11,7 @@ flex-direction: column;
 align-items:center;
 background-image: url('../assets/icons/kuiper1.png');
 background-position: center;
-
+flex-wrap: wrap;
 background-repeat: no-repeat;
 
 }
@@ -20,6 +20,7 @@ background-repeat: no-repeat;
     flex-direction: row;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 .empty{
     flex:1

@@ -43,7 +43,7 @@ export default function Configure() {
         Train<span style={{ color: "#EA7AD1" }}>→</span>Test<span style={{ color: "#D75E98" }}>→</span>validate<span style={{ color: "#9558A5" }}>→</span>use.
       </div> */}
       <div className="button-container">
-        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, marginRight: "20px", justifyContent: "flex-start" }}>
+        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
           <div className="buttonlink">
             <button
               className="button-style"
@@ -135,6 +135,21 @@ export default function Configure() {
         </div>
       </div>
       {/* <div className="selectiontext2">Pretrained model for many use cases.</div> */}
+      <div style={{ flex: 0.5 }}>
+        <button
+          className="button-api"
+          onMouseEnter={(e) => {
+            setstate5(!state5);
+            e.preventDefault();
+          }}
+          onMouseLeave={(e) => {
+            setstate5(!state5);
+            e.preventDefault();
+          }}
+        >
+          <span className="api-text">Generate API</span>
+        </button>
+      </div>
     </div>
   );
 }

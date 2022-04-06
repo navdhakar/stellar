@@ -45,7 +45,7 @@ export default function Selection() {
         Train<span style={{ color: "#EA7AD1" }}>→</span>Test<span style={{ color: "#D75E98" }}>→</span>validate<span style={{ color: "#9558A5" }}>→</span>use.
       </div>
       <div className="button-container">
-        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, marginRight: "20px", justifyContent: "flex-start" }}>
+        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
           <div className="buttonlink">
             <button
               className="button-style"

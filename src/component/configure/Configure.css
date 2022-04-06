@@ -6,13 +6,12 @@ background-color: black;
 }
 .contain{
 height: 100vh;
-
 display: flex;
 flex-direction: column;
 align-items:center;
 background-image: url('../assets/icons/kuiper1.png');
 background-position: center;
-
+flex-wrap: wrap;
 background-repeat: no-repeat;
 
 }
@@ -20,10 +19,11 @@ background-repeat: no-repeat;
     flex: 1;
     flex-direction: row;
     display: flex;
-   
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .empty{
-    flex:0.7
+    flex:1
 }
 .button-style{
     width: 230px;
@@ -42,6 +42,30 @@ background-repeat: no-repeat;
    
 
     margin-bottom: 20px;
+}
+.button-api{
+    width: 230px;
+    height: 60px;
+    background: #C4C4C4;
+    border-radius: 30px;
+    border-width: 0px;
+   
+    font-family: 'Roboto';
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    cursor:pointer;
+    flex: 1;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+
+}
+.api-text{
+    background: linear-gradient(to right, #f85398, #9555e9e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .options{
     width: 230px;
@@ -75,7 +99,6 @@ background-repeat: no-repeat;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-   
     font-size: 16px;
     margin-left: 10px;
     margin-top: 10px;
