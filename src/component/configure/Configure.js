@@ -135,7 +135,7 @@ export default function Configure() {
         </div>
       </div>
       {/* <div className="selectiontext2">Pretrained model for many use cases.</div> */}
-      <div style={{ flex: 0.5 }}>
+      <div style={{ flex: 0.5, display: "flex", justifyContent: "center" }}>
         <button
           className="button-api"
           onMouseEnter={(e) => {

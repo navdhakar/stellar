@@ -45,7 +45,7 @@ export default function Selection() {
         Train<span style={{ color: "#EA7AD1" }}>→</span>Test<span style={{ color: "#D75E98" }}>→</span>validate<span style={{ color: "#9558A5" }}>→</span>use.
       </div>
       <div className="button-container">
-        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
+        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
               className="button-style"
@@ -59,7 +59,7 @@ export default function Selection() {
           </div>
           <Options data={data1} />
         </div>
-        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
+        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
               className="button-style"
@@ -73,7 +73,7 @@ export default function Selection() {
           </div>
           <Options data={data2} />
         </div>
-        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
+        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
               className="button-style"
@@ -87,7 +87,7 @@ export default function Selection() {
           </div>
           <Options data={data3} />
         </div>
-        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
+        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
               className="button-style"
@@ -101,7 +101,7 @@ export default function Selection() {
           </div>
           <Options data={data4} />
         </div>
-        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
+        <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
               className="button-style"
@@ -116,7 +116,9 @@ export default function Selection() {
           <Options data={data5} />
         </div>
       </div>
-      <div className="selectiontext2">Pretrained model for many use cases.</div>
+      <div className="selectiontext2">
+        <span style={{ fontSize: "6vh" }}>Pretrained model for many use cases.</span>
+      </div>
     </div>
   );
 }

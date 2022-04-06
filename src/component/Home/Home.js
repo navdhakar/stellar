@@ -10,7 +10,9 @@ export default function Home() {
           <div>Stellar</div> <div style={{ color: "#C6C6C6" }}>AI</div>
         </div>
         <div className="hometext">
-          Making <span className="aiml">AI/ML</span> accessible to all
+          <span>Making </span>
+          <span className="aiml">AI/ML</span> <span>accessible </span>
+          <span style={{ marginLeft: "10px" }}>to all</span>
         </div>
         <div className="button-container">
           <Link to="/Selection">

@@ -51,14 +51,15 @@ background-repeat: no-repeat;
     border-width: 0px;
    
     font-family: 'Roboto';
-    font-family: 'Roboto';
+  
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     cursor:pointer;
     flex: 1;
-    margin-bottom: 20px;
-    font-family: 'Roboto';
+   
+   
+   
 
 }
 .api-text{
