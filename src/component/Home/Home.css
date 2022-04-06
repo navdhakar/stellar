@@ -41,18 +41,20 @@ flex-wrap: wrap;
 }
 @media only screen and (max-width: 600px) {
     .asteroid{
-        max-width: 400px;
+        max-width: 350px;
         resize: both;
         width: auto;
         height: auto;
     }
     .hometext{
         display: flex;
-flex-wrap: wrap;
-justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10vh;
     }
     .button-container{
         justify-content: center;
+        margin-top: 5vh;
     }
   }
 .hometext{
