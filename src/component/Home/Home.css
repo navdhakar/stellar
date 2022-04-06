@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    flex:1;
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+}
+.leftsection {
+display: flex;
+flex:1;
+flex-direction: column;
+}
+.rightsection{
+flex:1
+}
+.logo{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 47px;
+color: #FFFFFF;
+flex-direction: row;
+display: flex;
+flex:1;
+margin-left: 20px;
+}
+.asteroid{
+   max-width: 590px;
+    
+    width: auto;
+    height: auto;
+}
+.hometext{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+
+color: #FFFFFF;
+
+flex:1;
+max-width: 600px;
+margin-left: 20px;
+
+}
+.button-container{
+    flex: 0.5;
+}
+.button-style{
+    width: 125px;
+    height: 42px;
+    background: #C4C4C4;
+    border-radius: 30px;
+    border-width: 0px;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    cursor:pointer;
+}
+.button-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+.aiml{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 70px;
+background: linear-gradient(to right, #ff4eca, #ac7aeee7);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+
+
+
+}
