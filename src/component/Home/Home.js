@@ -13,14 +13,16 @@ export default function Home() {
           Making <span className="aiml">AI/ML</span> accessible to all
         </div>
         <div className="button-container">
-          <Link className="nav-link" to="/Selection">
+          <Link to="/Selection">
             <button className="button-style">
               <div className="button-text">get started</div>
             </button>
           </Link>
-          <button className="button-style">
-            <div className="button-text">read docs</div>
-          </button>
+          <Link to="/Selection">
+            <button className="button-style">
+              <div className="button-text">read docs</div>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="rightsection">

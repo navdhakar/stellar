@@ -52,7 +52,7 @@ margin-left: 20px;
     flex: 0.5;
 }
 .button-style{
-    width: 125px;
+    width: 115px;
     height: 42px;
     background: #C4C4C4;
     border-radius: 30px;
@@ -63,6 +63,7 @@ margin-left: 20px;
     font-weight: 600;
     font-size: 20px;
     cursor:pointer;
+    flex:1;
 }
 .button-text{
     font-family: 'Roboto';

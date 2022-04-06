@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
 import image from "../assets/icons/asteroid.png";
 
-import "./Selection.css";
-export default function Selection() {
-  const data_baremetal = ["Deep Neural net", "Convolutional Neural net", "Support Vector machine"];
-  const data_text = ["Naive Bayes Classifier", "Word2Vec", "Bert", "Transformers"];
-  const data_imgseg = ["U-Net", "Fast-FCN", "Mask-RCNN", "Gated-SCNN", "DeepLab"];
-  const data_audio = ["Recurrent Neural Network"];
-  const data_gen = ["GPT", "DCGAN", "CycleGAN", "AdversialFGSM"];
+import "./Configure.css";
+export default function Configure() {
+  const data_baremetal = ["Upload training and testing data"];
+  const data_text = [];
+  const data_imgseg = [" Configure network layers and parameters"];
+  const data_audio = [];
+  const data_gen = ["Confidence of model will be generated when training/testing is finished "];
   const empt = [];
   const [state1, setstate1] = useState(false);
   const [state2, setstate2] = useState(false);
@@ -28,10 +28,8 @@ export default function Selection() {
         {arr.map((data) => {
           return (
             <>
-              <Link to="/Configure" style={{ textDecoration: "none", color: "black" }}>
-                <div className="option-palette">{data}</div>
-                <hr style={{ borderTop: " 2px solid #8E8E8E", borderBottom: "0px", borderRadius: "5px", margin: "1em 3%" }}></hr>
-              </Link>
+              <div className="option-palette">{data}</div>
+              {/* <hr style={{ borderTop: " 2px solid #8E8E8E", borderBottom: "0px", borderRadius: "5px", margin: "1em 3%" }}></hr> */}
             </>
           );
         })}
@@ -41,20 +39,24 @@ export default function Selection() {
   return (
     <div className="contain">
       <div className="empty"></div>
-      <div className="selectiontext">
+      {/* <div className="selectiontext">
         Train<span style={{ color: "#EA7AD1" }}>→</span>Test<span style={{ color: "#D75E98" }}>→</span>validate<span style={{ color: "#9558A5" }}>→</span>use.
-      </div>
+      </div> */}
       <div className="button-container">
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, marginRight: "20px", justifyContent: "flex-start" }}>
           <div className="buttonlink">
             <button
               className="button-style"
-              onClick={(e) => {
+              onMouseEnter={(e) => {
+                setstate1(!state1);
+                e.preventDefault();
+              }}
+              onMouseLeave={(e) => {
                 setstate1(!state1);
                 e.preventDefault();
               }}
             >
-              Bare Metal
+              Input Data
             </button>
           </div>
           <Options data={data1} />
@@ -63,12 +65,16 @@ export default function Selection() {
           <div className="buttonlink">
             <button
               className="button-style"
-              onClick={(e) => {
+              onMouseEnter={(e) => {
+                setstate2(!state2);
+                e.preventDefault();
+              }}
+              onMouseLeave={(e) => {
                 setstate2(!state2);
                 e.preventDefault();
               }}
             >
-              Text
+              Pre Proccessing
             </button>
           </div>
           <Options data={data2} />
@@ -77,12 +83,16 @@ export default function Selection() {
           <div className="buttonlink">
             <button
               className="button-style"
-              onClick={(e) => {
+              onMouseEnter={(e) => {
+                setstate3(!state3);
+                e.preventDefault();
+              }}
+              onMouseLeave={(e) => {
                 setstate3(!state3);
                 e.preventDefault();
               }}
             >
-              Image Segmentation
+              Layers configuration
             </button>
           </div>
           <Options data={data3} />
@@ -91,12 +101,16 @@ export default function Selection() {
           <div className="buttonlink">
             <button
               className="button-style"
-              onClick={(e) => {
+              onMouseEnter={(e) => {
+                setstate4(!state4);
+                e.preventDefault();
+              }}
+              onMouseLeave={(e) => {
                 setstate4(!state4);
                 e.preventDefault();
               }}
             >
-              Audio
+              Train network
             </button>
           </div>
           <Options data={data4} />
@@ -105,18 +119,22 @@ export default function Selection() {
           <div className="buttonlink">
             <button
               className="button-style"
-              onClick={(e) => {
+              onMouseEnter={(e) => {
+                setstate5(!state5);
+                e.preventDefault();
+              }}
+              onMouseLeave={(e) => {
                 setstate5(!state5);
                 e.preventDefault();
               }}
             >
-              Genratives
+              Confidence
             </button>
           </div>
           <Options data={data5} />
         </div>
       </div>
-      <div className="selectiontext2">Pretrained model for many use cases.</div>
+      {/* <div className="selectiontext2">Pretrained model for many use cases.</div> */}
     </div>
   );
 }
