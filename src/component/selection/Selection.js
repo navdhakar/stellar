@@ -39,7 +39,7 @@ export default function Selection() {
     );
   }
   return (
-    <div className="contain">
+    <div className="container">
       <div className="empty"></div>
       <div className="selectiontext">
         Train<span style={{ color: "#EA7AD1" }}>→</span>Test<span style={{ color: "#D75E98" }}>→</span>validate<span style={{ color: "#9558A5" }}>→</span>use.
@@ -117,7 +117,7 @@ export default function Selection() {
         </div>
       </div>
       <div className="selectiontext2">
-        <span style={{ fontSize: "6vh" }}>Pretrained model for many use cases.</span>
+        <div className="bottom-text">Pretrained model for many use cases.</div>
       </div>
     </div>
   );

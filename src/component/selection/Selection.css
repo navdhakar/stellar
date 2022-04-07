@@ -4,8 +4,7 @@ font-family: 'Roboto', sans-serif;
 
 background-color: black;
 }
-.contain{
-
+.container{
 display: flex;
 flex-direction: column;
 align-items:center;
@@ -20,6 +19,7 @@ background-repeat: no-repeat;
     flex-direction: row;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .empty{
@@ -52,6 +52,7 @@ background-repeat: no-repeat;
     margin-left: 15px;
 
 }
+
 .selectiontext{
     font-family: 'Roboto';
     font-style: normal;
@@ -61,18 +62,27 @@ background-repeat: no-repeat;
     flex:1  ;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 .selectiontext2{
+   
+}
+
+.bottom-text{
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 50vw;
+    font-size: 50px;
     color: #FFFFFF;
-    flex:1;
     display: flex;
     flex-wrap: wrap;
-  
+    justify-content: center;
+    align-items: center;
 }
 .option-palette{
 
@@ -87,6 +97,31 @@ background-repeat: no-repeat;
     flex: 1;
     justify-content: center;
     display: flex;
-   
+    flex-wrap: wrap;
     text-decoration: none;
 }
+@media only screen and (max-width: 600px) {
+    
+    
+    .button-container{
+        flex:4;
+    }
+    .selectiontext{
+        flex:1;
+        font-size: 4vh;
+    }
+    .selectiontext2{
+        flex:1;
+        font-size: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .bottom-text{
+        font-size: 5vh;
+
+    }
+  
+  }
