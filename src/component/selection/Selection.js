@@ -24,12 +24,12 @@ export default function Selection() {
     const arr = opt.data;
 
     return (
-      <div className="options">
+      <div className="options-section">
         {arr.map((data) => {
           return (
             <>
               <Link to="/Configure" style={{ textDecoration: "none", color: "black" }}>
-                <div className="option-palette">{data}</div>
+                <div className="option-palette-section">{data}</div>
                 <hr style={{ borderTop: " 2px solid #8E8E8E", borderBottom: "0px", borderRadius: "5px", margin: "1em 3%" }}></hr>
               </Link>
             </>
@@ -39,16 +39,16 @@ export default function Selection() {
     );
   }
   return (
-    <div className="container">
-      <div className="empty"></div>
+    <div className="container-section">
+      <div className="empty-section"></div>
       <div className="selectiontext">
         Train<span style={{ color: "#EA7AD1" }}>→</span>Test<span style={{ color: "#D75E98" }}>→</span>validate<span style={{ color: "#9558A5" }}>→</span>use.
       </div>
-      <div className="button-container">
+      <div className="button-container-section">
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
-              className="button-style"
+              className="button-style-section"
               onClick={(e) => {
                 setstate1(!state1);
                 e.preventDefault();
@@ -62,7 +62,7 @@ export default function Selection() {
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
-              className="button-style"
+              className="button-style-section"
               onClick={(e) => {
                 setstate2(!state2);
                 e.preventDefault();
@@ -76,7 +76,7 @@ export default function Selection() {
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
-              className="button-style"
+              className="button-style-section"
               onClick={(e) => {
                 setstate3(!state3);
                 e.preventDefault();
@@ -90,7 +90,7 @@ export default function Selection() {
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
-              className="button-style"
+              className="button-style-section"
               onClick={(e) => {
                 setstate4(!state4);
                 e.preventDefault();
@@ -104,7 +104,7 @@ export default function Selection() {
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
             <button
-              className="button-style"
+              className="button-style-section"
               onClick={(e) => {
                 setstate5(!state5);
                 e.preventDefault();

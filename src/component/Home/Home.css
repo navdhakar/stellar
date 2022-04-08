@@ -54,6 +54,11 @@ flex-wrap: wrap;
     }
     .button-container{
         justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+    }
+    .button-style{
         margin-top: 5vh;
     }
   }
@@ -61,25 +66,23 @@ flex-wrap: wrap;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-
 font-size: 70px;
 display: flex;
 flex-wrap: wrap;
 color: #FFFFFF;
-
 flex:1;
 max-width: 600px;
 margin-left: 20px;
 
 }
 .button-container{
-    flex: 0.5;
-    align-items: center;
-   
+    flex: 1;
+    align-items: flex-start;
+    
 }
 .button-style{
-    width: 115px;
-    height: 42px;
+    width: 200px;
+    height: 60px;
     background: #C4C4C4;
     border-radius: 30px;
     border-width: 0px;

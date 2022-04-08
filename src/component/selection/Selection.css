@@ -4,7 +4,10 @@ font-family: 'Roboto', sans-serif;
 
 background-color: black;
 }
-.container{
+.container-section{
+
+height: 100vh;
+
 display: flex;
 flex-direction: column;
 align-items:center;
@@ -14,25 +17,22 @@ flex-wrap: wrap;
 background-repeat: no-repeat;
 
 }
-.button-container{
+.button-container-section{
     flex: 1;
     flex-direction: row;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-wrap: wrap;
 }
-.empty{
+.empty-section{
     flex:1
 }
-.button-style{
+.button-style-section{
     width: 230px;
     height: 60px;
     background: #C4C4C4;
     border-radius: 30px;
     border-width: 0px;
-   
-    font-family: 'Roboto';
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
@@ -43,7 +43,7 @@ background-repeat: no-repeat;
 
     margin-bottom: 20px;
 }
-.options{
+.options-section{
     width: 230px;
     background: #C4C4C4;
     border-radius: 10px;
@@ -68,7 +68,9 @@ background-repeat: no-repeat;
 
 }
 .selectiontext2{
-   
+    flex: 1;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .bottom-text{
@@ -84,7 +86,7 @@ background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
 }
-.option-palette{
+.option-palette-section{
 
     font-family: 'Roboto';
     font-style: normal;
@@ -120,8 +122,46 @@ background-repeat: no-repeat;
         margin-left: 20px;
     }
     .bottom-text{
-        font-size: 5vh;
+        font-size: 4vh;
 
+    }
+    .button-style-section{
+        width: 200px;
+        height: 50px;
+        background: #C4C4C4;
+        border-radius: 20px;
+        border-width: 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3vh;
+        cursor:pointer;
+        flex: 1;
+        
+    
+        margin-bottom: 1vh;
+    }
+    .empty-section{
+        flex: 0;
+    }
+    .options-section{
+        width: 200px;
+        background: #C4C4C4;
+        border-radius: 10px;
+        border-width: 0px;
+        margin-bottom: 1vh;
+        margin-left: 1vh;
+    
+    }
+    .option-palette-section{
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: 2vh;
+        margin-top: 2vh;
+        
     }
   
   }

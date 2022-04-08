@@ -24,11 +24,11 @@ export default function Configure() {
     const arr = opt.data;
 
     return (
-      <div className="options">
+      <div className="options-config">
         {arr.map((data) => {
           return (
             <>
-              <div className="option-palette">{data}</div>
+              <div className="option-palette-config">{data}</div>
               {/* <hr style={{ borderTop: " 2px solid #8E8E8E", borderBottom: "0px", borderRadius: "5px", margin: "1em 3%" }}></hr> */}
             </>
           );
@@ -37,16 +37,16 @@ export default function Configure() {
     );
   }
   return (
-    <div className="contain">
-      <div className="empty"></div>
+    <div className="container-config">
+      <div className="empty-config"></div>
       {/* <div className="selectiontext">
         Train<span style={{ color: "#EA7AD1" }}>→</span>Test<span style={{ color: "#D75E98" }}>→</span>validate<span style={{ color: "#9558A5" }}>→</span>use.
       </div> */}
-      <div className="button-container">
+      <div className="button-container-config">
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
           <div className="buttonlink">
             <button
-              className="button-style"
+              className="button-style-config"
               onMouseEnter={(e) => {
                 setstate1(!state1);
                 e.preventDefault();
@@ -62,9 +62,9 @@ export default function Configure() {
           <Options data={data1} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
-          <div className="buttonlink">
+          <div className="buttonlink-config">
             <button
-              className="button-style"
+              className="button-style-config"
               onMouseEnter={(e) => {
                 setstate2(!state2);
                 e.preventDefault();
@@ -80,9 +80,9 @@ export default function Configure() {
           <Options data={data2} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
-          <div className="buttonlink">
+          <div className="buttonlink-config">
             <button
-              className="button-style"
+              className="button-style-config"
               onMouseEnter={(e) => {
                 setstate3(!state3);
                 e.preventDefault();
@@ -98,9 +98,9 @@ export default function Configure() {
           <Options data={data3} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
-          <div className="buttonlink">
+          <div className="buttonlink-config">
             <button
-              className="button-style"
+              className="button-style-config"
               onMouseEnter={(e) => {
                 setstate4(!state4);
                 e.preventDefault();
@@ -116,9 +116,9 @@ export default function Configure() {
           <Options data={data4} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1 }}>
-          <div className="buttonlink">
+          <div className="buttonlink-config">
             <button
-              className="button-style"
+              className="button-style-config"
               onMouseEnter={(e) => {
                 setstate5(!state5);
                 e.preventDefault();
@@ -136,18 +136,8 @@ export default function Configure() {
       </div>
       {/* <div className="selectiontext2">Pretrained model for many use cases.</div> */}
       <div style={{ flex: 0.5, display: "flex", justifyContent: "center" }}>
-        <button
-          className="button-api"
-          onMouseEnter={(e) => {
-            setstate5(!state5);
-            e.preventDefault();
-          }}
-          onMouseLeave={(e) => {
-            setstate5(!state5);
-            e.preventDefault();
-          }}
-        >
-          <span className="api-text">Generate API</span>
+        <button className="button-api-config">
+          <span className="api-text-config">Generate API</span>
         </button>
       </div>
     </div>

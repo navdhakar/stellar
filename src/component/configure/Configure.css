@@ -4,7 +4,7 @@ font-family: 'Roboto', sans-serif;
 
 background-color: black;
 }
-.contain{
+.container-config{
 height: 100vh;
 display: flex;
 flex-direction: column;
@@ -15,17 +15,17 @@ flex-wrap: wrap;
 background-repeat: no-repeat;
 
 }
-.button-container{
+.button-container-config{
     flex: 1;
     flex-direction: row;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
 }
-.empty{
+.empty-config{
     flex:1
 }
-.button-style{
+.button-style-config{
     width: 230px;
     height: 60px;
     background: #C4C4C4;
@@ -43,7 +43,7 @@ background-repeat: no-repeat;
 
     margin-bottom: 20px;
 }
-.button-api{
+.button-api-config{
     width: 230px;
     height: 60px;
     background: #C4C4C4;
@@ -62,13 +62,13 @@ background-repeat: no-repeat;
    
 
 }
-.api-text{
+.api-text-config{
     background: linear-gradient(to right, #f85398, #9555e9e7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.options{
+.options-config{
     width: 230px;
     background: #C4C4C4;
     border-radius: 10px;
@@ -77,25 +77,8 @@ background-repeat: no-repeat;
     margin-left: 15px;
 
 }
-.selectiontext{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    color: #FFFFFF;
-    flex:1  ;
 
-
-}
-.selectiontext2{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    color: #FFFFFF;
-    flex:1;
-}
-.option-palette{
+.option-palette-config{
 
     font-family: 'Roboto';
     font-style: normal;
@@ -104,10 +87,62 @@ background-repeat: no-repeat;
     margin-left: 10px;
     margin-top: 10px;
 }
-.buttonlink{
+.buttonlink-config{
     flex: 1;
     justify-content: center;
     display: flex;
    
     text-decoration: none;
 }
+@media only screen and (max-width: 600px) {
+    
+    
+    .button-container{
+        justify-content: center;
+    }
+    .button-style-config{
+        width: 200px;
+        height: 50px;
+        background: #C4C4C4;
+        border-radius: 20px;
+        border-width: 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3vh;
+        cursor:pointer;
+        flex: 1;
+        
+    
+        margin-bottom: 1vh;
+    }
+    .empty-config{
+        flex: 0.5;
+    }
+    .options-config{
+        width: 200px;
+        background: #C4C4C4;
+        border-radius: 10px;
+        border-width: 0px;
+        margin-bottom: 1vh;
+        margin-left: 1vh;
+    
+    }
+    .option-palette-config{
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: 2vh;
+        margin-top: 2vh;
+        
+    }
+    .button-api-config{
+        width: 200px;
+        height: 50px;
+
+        border-radius: 20px;
+    }
+  
+  }
