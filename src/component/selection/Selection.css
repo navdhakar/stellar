@@ -112,6 +112,7 @@ background-repeat: no-repeat;
         flex:1;
         font-size: 4vh;
     }
+   
     .selectiontext2{
         flex:1;
         font-size: 2vh;
@@ -134,7 +135,7 @@ background-repeat: no-repeat;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 600;
-        font-size: 3vh;
+        font-size: 2vh;
         cursor:pointer;
         flex: 1;
         
