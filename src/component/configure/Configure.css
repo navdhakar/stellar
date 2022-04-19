@@ -25,6 +25,13 @@ background-repeat: no-repeat;
 .empty-config{
     flex:1
 }
+.selectiontext{
+    flex:1;
+    font-size: 4vh;
+}
+input[type='file'] {
+    color: rgba(0, 0, 0, 0)
+  }
 .button-style-config{
     width: 230px;
     height: 60px;

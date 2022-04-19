@@ -28,7 +28,7 @@ export default function Selection() {
         {arr.map((data) => {
           return (
             <>
-              <Link to="/Configure" style={{ textDecoration: "none", color: "black" }}>
+              <Link to="/Configure" style={{ textDecoration: "none", color: "black" }} state={{ from: data }}>
                 <div className="option-palette-section">{data}</div>
                 <hr style={{ borderTop: " 2px solid #8E8E8E", borderBottom: "0px", borderRadius: "5px", margin: "1em 3%" }}></hr>
               </Link>
