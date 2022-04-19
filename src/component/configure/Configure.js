@@ -7,7 +7,7 @@ import axios from "axios";
 export default function Configure() {
   const location = useLocation();
   const { from } = location.state;
-  console.log(from);
+
   const [selectedFile, setSelectedFile] = useState();
   const [isFilePicked, setIsFilePicked] = useState(false);
   const [selectfile, setselectfile] = useState(false);
@@ -118,15 +118,7 @@ export default function Configure() {
     return (
       <div className="options-config" style={{ marginTop: "5px" }}>
         <div className="option-palette-config" style={{ display: "flex", flexDirection: "column" }}>
-          <input
-            type="file"
-            onChange={() => {
-              changeHandler();
-              setuploadcomp(false);
-            }}
-            style={{ marginBottom: "5px" }}
-            multiple
-          />
+          <input type="file" onChange={changeHandler} style={{ marginBottom: "5px" }} multiple />
 
           <button onClick={handleSubmission} style={{ width: "40%", marginBottom: "5px" }}>
             upload
