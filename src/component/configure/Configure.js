@@ -123,7 +123,8 @@ export default function Configure() {
           <button onClick={handleSubmission} style={{ width: "40%", marginBottom: "5px" }}>
             upload
           </button>
-          <div style={{ color: "#696969" }}>{progress}%</div>
+          {uploadcomp ? <div style={{ color: "#696969" }}>{progress}%</div> : <div style={{ color: "#696969" }}>{progress - 1}%</div>}
+
           <div>
             {uploadcomp ? <span style={{ color: "green" }}>✓</span> : null} {uploadstats}{" "}
           </div>
