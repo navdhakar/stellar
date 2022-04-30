@@ -5,10 +5,20 @@ import image from "../assets/icons/asteroid.png";
 import "./Selection.css";
 export default function Selection() {
   const data_baremetal = ["Deep Neural net", "Convolutional Neural net", "Support Vector machine"];
+  const pretrained_baremetal = [false, false, false];
+
   const data_text = ["Naive Bayes Classifier", "Word2Vec", "Bert", "Transformers"];
+  const pretrained_text = [false, true, true, false];
+
   const data_imgseg = ["U-Net", "Fast-FCN", "Mask-RCNN", "Gated-SCNN", "DeepLab"];
+  const pretrained_imgseg = [true, false, true, false, false];
+
   const data_audio = ["Recurrent Neural Network"];
+  const pretrained_audio = [false];
+
   const data_gen = ["GPT", "DCGAN", "CycleGAN", "AdversialFGSM"];
+  const pretrained_gen = [true, false, false, false];
+
   const empt = [];
   const [state1, setstate1] = useState(false);
   const [state2, setstate2] = useState(false);
@@ -20,16 +30,25 @@ export default function Selection() {
   const data3 = state3 ? data_imgseg : empt;
   const data4 = state4 ? data_audio : empt;
   const data5 = state5 ? data_gen : empt;
+
   function Options(opt) {
     const arr = opt.data;
-
+    const arr2 = opt.preT;
     return (
       <div className="options-section">
-        {arr.map((data) => {
+        {arr.map((data, index) => {
           return (
             <>
               <Link to="/Configure" style={{ textDecoration: "none", color: "black" }} state={{ from: data }}>
-                <div className="option-palette-section">{data}</div>
+                <div className="option-palette-section">
+                  {data}
+                  {arr2[index] ? (
+                    <div className="pretrained-container">
+                      <div className="pretrained-config">Pre-Trained</div>
+                    </div>
+                  ) : null}
+                </div>
+
                 <hr style={{ borderTop: " 2px solid #8E8E8E", borderBottom: "0px", borderRadius: "5px", margin: "1em 3%" }}></hr>
               </Link>
             </>
@@ -57,7 +76,7 @@ export default function Selection() {
               Bare Metal
             </button>
           </div>
-          <Options data={data1} />
+          <Options data={data1} preT={pretrained_baremetal} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
@@ -71,7 +90,7 @@ export default function Selection() {
               Text
             </button>
           </div>
-          <Options data={data2} />
+          <Options data={data2} preT={pretrained_text} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
@@ -85,7 +104,7 @@ export default function Selection() {
               Image Segmentation
             </button>
           </div>
-          <Options data={data3} />
+          <Options data={data3} preT={pretrained_imgseg} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
@@ -99,7 +118,7 @@ export default function Selection() {
               Audio
             </button>
           </div>
-          <Options data={data4} />
+          <Options data={data4} preT={pretrained_audio} />
         </div>
         <div style={{ flexDirection: "column", display: "flex", alignItems: "center", flex: 1, flexWrap: "wrap" }}>
           <div className="buttonlink">
@@ -113,7 +132,7 @@ export default function Selection() {
               Genratives
             </button>
           </div>
-          <Options data={data5} />
+          <Options data={data5} preT={pretrained_gen} />
         </div>
       </div>
       <div className="selectiontext2">

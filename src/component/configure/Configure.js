@@ -173,7 +173,7 @@ export default function Configure() {
                 e.preventDefault();
               }}
             >
-              Pre Proccessing
+              Data Parameters
             </button>
           </div>
           <Options data={data2} />
