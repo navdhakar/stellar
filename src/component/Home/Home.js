@@ -4,18 +4,28 @@ import image from "../assets/icons/asteroid.png";
 import LoginHooks from "../Login";
 import Logout from "../Logout";
 import "../auth.css";
+import { server } from "../../configure";
 import signup from "../signup";
 import { Link, Redirect, useHistory } from "react-router-dom";
 export default function Home() {
   const [Global_auth_state, setGlobal_auth] = useState("");
   const Global_auth = (response_data) => {
     setGlobal_auth(response_data);
-    console.log(Global_auth_state.profileObj);
+    console.log(Global_auth_state);
   };
   function Signup() {
     if (Global_auth_state == "failure" || Global_auth_state == false) {
       return <LoginHooks Global_auth={Global_auth} />;
     } else {
+      fetch(`${server}/google_auth`, {
+        method: "GET",
+        headers: new Headers({
+          Authorization: Global_auth_state.tokenId,
+          "Content-Type": "application/x-www-form-urlencoded",
+        }),
+      })
+        .then((res) => res.json())
+        .then((response) => console.log(response));
       return (
         <div style={{ flexDirection: "row" }}>
           <div

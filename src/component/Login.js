@@ -13,8 +13,6 @@ function LoginHooks({ Global_auth }) {
   };
 
   const onFailure = (res) => {
-    console.log("Login failed: res:", res);
-    alert(`Failed to login.😢`);
     Global_auth("failure");
   };
 

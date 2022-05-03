@@ -33,6 +33,7 @@ export default function Configure() {
 
   useEffect(() => {
     setuploadstats("");
+    setuploadcomp(false);
   }, []);
 
   function setCookie(cname, cvalue, exdays) {
@@ -94,7 +95,7 @@ export default function Configure() {
       })
       .catch((error) => {
         console.error("Error:", error);
-        setuploadstats("error in upload");
+        setuploadstats(" error in upload");
       });
     e.preventDefault();
   };
