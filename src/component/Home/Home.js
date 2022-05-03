@@ -13,7 +13,7 @@ export default function Home() {
     console.log(Global_auth_state.profileObj);
   };
   function Signup() {
-    if (Global_auth_state == "failure") {
+    if (Global_auth_state == "failure" || Global_auth_state == false) {
       return <LoginHooks Global_auth={Global_auth} />;
     } else {
       return (
@@ -43,7 +43,7 @@ export default function Home() {
     <div className="container">
       <div className="leftsection">
         <div className="logo">
-          <div style={{ flex: 5, flexDirection: "" }}>
+          <div style={{ flex: 5, flexDirection: "row" }}>
             <div>
               Stellar <span style={{ color: "#C6C6C6" }}>AI</span>
             </div>
