@@ -8,9 +8,6 @@ const clientId = "612470439960-9cr8dfia2v3hr89no7emec851rrt9sug.apps.googleuserc
 
 function LoginHooks({ Global_auth }) {
   const onSuccess = (res) => {
-    console.log("Login Success: currentUser:", res.profileObj);
-    alert(`Logged in successfully welcome to StellarAI ${res.profileObj.name} .`);
-
     Global_auth(res);
     refreshTokenSetup(res);
   };
